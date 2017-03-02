@@ -7,18 +7,18 @@
   <meta charset="utf-8" />
   <script>
   function getName(){
-    //document.getElementById("doneButton").innerHTML = "Done";
-    var fullName;
-    fullName = document.getElementById("first").value;
-    fullName = document.getElementById("last").value;
-    document.getElementById("message").innerHTML = fullName;
+    var firstName;
+    firstName = document.getElementById("first").value;
+    var lastName;
+    lastName = document.getElementById("last").value;
+      document.getElementById("message").innerHTML = firstName + " " +lastName;
   }
   </script>
 </head>
 <body>
   <input type="text" id="first">
   <input type="text" id="last">
-  <button type="button" id="doneButton" onclick="getName()">Done</button>
+  <button type="button" class="doneButton" onclick="getName()">Done</button>
     <p id="message"> </p>
 </body>
 </html>
